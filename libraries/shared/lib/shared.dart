@@ -18,4 +18,5 @@ class NamedRoute {
   String tvShow = '/tv_show';
   String settings = '/settings';
   String favorite = '/favorite';
+  String detailFavorite = '/detail_favorite';
 }

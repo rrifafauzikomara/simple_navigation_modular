@@ -13,6 +13,9 @@ dependencies:
     sdk: flutter
   flutter_modular: ^2.0.1
 
+  shared:
+    path: ../../libraries/shared
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

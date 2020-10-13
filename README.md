@@ -1,4 +1,4 @@
-# learn_flutter_modular
+# simple_navigation_modular
 
 A new Flutter application.
 
