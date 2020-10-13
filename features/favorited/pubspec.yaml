@@ -1,4 +1,4 @@
-name: home
+name: favorited
 description: A new Flutter package.
 version: 0.0.1
 author:
@@ -12,16 +12,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_modular: ^2.0.1
-
-  movie:
-    path: ../movie
-  tv_show:
-    path: ../tv_show
-  favorited:
-    path: ../favorited
-
-  shared:
-    path: ../../libraries/shared
 
 dev_dependencies:
   flutter_test:

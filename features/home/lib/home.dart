@@ -1,3 +1,4 @@
+import 'package:favorited/favorited.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:movie/movie.dart';
@@ -9,6 +10,7 @@ class HomeModule extends ChildModule {
   List<Bind> get binds => [
         Bind((_) => MoviePage()),
         Bind((_) => TvShowPage()),
+        Bind((_) => FavoritePage()),
       ];
 
   @override
@@ -29,6 +31,7 @@ class _HomePageState extends State<HomePage> {
   List<Widget> _listWidget = [
     Modular.get<MoviePage>(),
     Modular.get<TvShowPage>(),
+    Modular.get<FavoritePage>(),
   ];
 
   List<BottomNavigationBarItem> _bottomNavBarItems = [
@@ -39,6 +42,10 @@ class _HomePageState extends State<HomePage> {
     BottomNavigationBarItem(
       icon: Icon(Icons.tv_sharp),
       label: 'Tv Show',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.favorite),
+      label: 'Favorite',
     ),
   ];
 

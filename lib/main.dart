@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:detail_movie/detail_movie.dart';
+import 'package:favorited/favorited.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:home/home.dart';
@@ -34,6 +35,8 @@ class AppModule extends MainModule {
         ModularRouter(Modular.get<NamedRoute>().tvShow, module: TvShowModule()),
         ModularRouter(Modular.get<NamedRoute>().settings,
             module: SettingsModule()),
+        ModularRouter(Modular.get<NamedRoute>().favorite,
+            module: FavoriteModule()),
       ];
 }
 

@@ -40,6 +40,8 @@ dependencies:
     path: features/tv_show
   settings:
     path: features/settings
+  favorited:
+    path: features/favorited
 
   shared:
     path: libraries/shared
